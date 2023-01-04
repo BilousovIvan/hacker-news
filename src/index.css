@@ -1,13 +1,109 @@
-body {
+/* Resset and fundamentals styles*/
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  text-decoration: none;
+
+  color: #000;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  /* max-width: 1280px; */
+  margin: 0 auto;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+main {
+  margin: 24px;
+}
+button {
+  margin: 12px 0;
+}
+
+/* Header */
+header {
+  padding: 0 24px;
+  height: 48px;
+  max-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ff6600;
+}
+header h1 {
+  padding-left: 12px;
+}
+header .nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-item {
+  margin: 12px;
+}
+.header-news-list {
+  margin: 0 12px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+/* Card Wrapper/Container */
+.container {
+  margin: 0 auto;
+}
+/* Card news */
+
+.news-card-items-container {
+  background-color: #b6d2e3;
+
+  margin: 24px 12px;
+  padding: 18px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.news-card-items-container:hover {
+  transform: scale(1.02);
+}
+.news-card-meta {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.news-card-meta p {
+  margin: 0 6px;
+}
+
+/* Preloader */
+.preloader-container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* news pages styles */
+.container-news-page {
+  max-width: 100vw;
+  padding: 24px;
+}
+
+/* Comments */
+
+.comment-wrapper {
+  background-color: #b6d2e3;
+  margin: 24px 12px;
+  padding: 18px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.comment-wrapper p {
+  margin: 12px 0;
+}
+.comments-container-footer {
+  display: flex;
 }
